@@ -1,0 +1,235 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+/* ---------------
+    Common Style
+------------------ */
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    background-color: #D1D1D1;
+    height: 1px;
+    border: none;
+}
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    padding: 30px 33px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+}
+/*-------------- 
+Header Style
+---------------*/
+header{
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    padding: 10px 0 10px 0;
+}
+nav span{
+    display: flex;
+    align-items: center;
+}
+nav span a{
+     padding: 0 8px;
+     color: #fff;
+
+
+}
+
+.header-title{
+    font-size: 24px;
+}
+.header-logo{
+    width: 40px;
+    height: 51px;
+}
+
+/* -----------
+Top player style 
+---------------*/
+.top-players{
+    margin-bottom: 26px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 26px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player .player-name{
+    margin-left: 16px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+/* -------------
+Blog Style
+---------------- */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 47px;
+}
+.blog{
+    display: flex;
+}
+.blog .thambnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+    margin-top: -11px;
+}
+.blog-author a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #562EFF;
+}
+/*----------------
+ Course style 
+ -----------------*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    width: 252px;
+    height: 269px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-detail{
+    padding: 0 27px 0 0;
+}
+.course-info{
+    display:flex;
+    justify-content: space-between;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+/* ------------------
+---------------------
+Media Query
+--------------------
+-------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Common Section */
+    .container{
+        max-width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    /* ---------
+    Header Style
+    ------------ */
+    nav{
+        flex-direction: column;
+    }
+     /*---------
+      Top player
+      ----------*/
+      .players{
+          grid-template-columns: repeat(2,1fr);
+      }
+      .player{
+          flex-direction: column;
+      }
+       /*---------
+      Top Blog
+      ----------*/
+      .blogs{
+        grid-template-columns: repeat(1,1fr);
+      }
+      .blog{
+        flex-direction: column;
+        align-items: center;
+      }
+      /* ----------
+      Courses
+      ------------- */
+      .courses{
+          grid-template-columns: repeat(1,1fr);
+          grid-row-gap: 50px;
+      }
+      .course{
+          justify-self: center;
+      }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
